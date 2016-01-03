@@ -1,0 +1,42 @@
+[
+  {
+    "name" : "Cheese",
+    "image" : "../assets/images/cheese.png",
+    "thumb" : "../assets/images/cheese-thumb.png"
+  },
+  {
+    "name" : "Jumpers",
+    "image" : "../assets/images/jumper.png",
+    "thumb" : "../assets/images/jumper-thumb.png"
+  },
+  {
+    "name" : "Cats",
+    "image" : "../assets/images/cat.png",
+    "thumb" : "../assets/images/cat-thumb.png"
+  },
+  {
+    "name" : "Toasters",
+    "image" : "../assets/images/toaster.png",
+    "thumb" : "../assets/images/toaster-thumb.png"
+  },
+  {
+    "name" : "Durians",
+    "image" : "../assets/images/durian.png",
+    "thumb" : "../assets/images/durian-thumb.png"
+  },
+  {
+    "name" : "Tape Measures",
+    "image" : "../assets/images/tapemeasure.png",
+    "thumb" : "../assets/images/tapemeasure-thumb.png"
+  },
+  {
+    "name" : "Footballs",
+    "image" : "../assets/images/football.png",
+    "thumb" : "../assets/images/football-thumb.png"
+  },
+  {
+    "name" : "Bearings",
+    "image" : "../assets/images/bearing.png",
+    "thumb" : "../assets/images/bearing-thumb.png"
+  }
+]

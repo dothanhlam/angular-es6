@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="AppController as vm">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS with ES6</title>
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+
+    <h1>A Pleasing Array of Items</h1>
+
+    <state-display ng-show="showMe" start="showMe"></state-display>
+
+    <item-selector collection="vm.items" ng-hide="showMe"></item-selector>
+
+    <button class="show-me" ng-show="vm.selection.length && !showMe" ng-click="showMe = true">Get Pleasure</button>
+
+    <item-display collection="vm.selection" ng-show="showMe" start="showMe"></item-display>
+
+    <button class="thing-button" ng-click="vm.makeThing()">Click here for things</button>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="register.js"></script>
+    <script src="app.js"></script>
+    <script src="main/main.controller.js"></script>
+    <script src="directives/item.js"></script>
+    <script src="directives/item.display.js"></script>
+    <script src="directives/item.selector.js"></script>
+    <script src="directives/selectable.js"></script>
+    <script src="directives/state.display.js"></script>
+    <script src="services/items.service.js"></script>
+    <script src="services/states.provider.js"></script>
+    <script src="services/thing.factory.js"></script>
+</body>
+</html>
