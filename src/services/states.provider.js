@@ -21,6 +21,7 @@ class StatesProvider {
      * This method allows the prefix value to be configured at runtime.
      * @param value
      */
+
     setPrefix(value) {
         this.prefix = value;
     }

@@ -9,5 +9,6 @@ app.constant('config', {
 
 
 app.config((statesProvider) => {
+    console.log('statesProvider', statesProvider)
     statesProvider.setPrefix('You are feeling');
 });

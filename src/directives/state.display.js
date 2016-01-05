@@ -5,15 +5,20 @@ class StateDisplayDirective {
 
     /*@ngInject*/
     constructor($interval, states) {
+
         this.template = '<div class="state-label">{{ prefix }} {{ currentState }}</div>';
         this.restrict = 'E';
         this.replace = true;
+
         this.scope = {
             start: '='
         };
 
         this.$interval = $interval;
         this.states = states;
+
+        console.log('StateDisplayDirective.states', states)
+
     }
 
     link(scope) {
@@ -29,4 +34,5 @@ class StateDisplayDirective {
 
     }
 }
+
 register('app').directive('stateDisplay', StateDisplayDirective);

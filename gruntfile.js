@@ -9,6 +9,22 @@ module.exports = function (grunt) {
 
         clean: ['build', 'dist', 'tmp'],
 
+        ngAnnotate: {
+            options: {
+                singleQuotes: true
+            },
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'build/',
+                        src: ['**/*.js'],
+                        dest: 'build/'
+                    },
+                ],
+            },
+        },
+
         babel: {
             options: {
                 sourceMap: true,
@@ -32,7 +48,7 @@ module.exports = function (grunt) {
             },
             src: {
                 files: ['src/**/*.js'],
-                tasks: ['babel']
+                tasks: ['babel', 'ngAnnotate']
             },
             test: {
                 files: ['test/**/*.tests.js'],
@@ -64,6 +80,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-ng-annotate');
 
-    grunt.registerTask('default', ['clean', 'copy:assets', 'babel', 'watch']);
+    grunt.registerTask('default', ['clean', 'copy:assets', 'babel', 'ngAnnotate', 'watch']);
 }

@@ -4,7 +4,7 @@
 class ItemsService {
 
     /*@ngInject*/
-    constructor($http, config) {
+    constructor($http, config, states) {
         this.$http = $http;
         this.config = config;
     }
